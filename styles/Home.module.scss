@@ -1,0 +1,17 @@
+.home_box {
+  position: fixed;
+  width: 100vw;
+  // height: calc(100vh + 30px);
+  height: 100vh;
+  top: 0;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+// /* 手机 */
+// @media screen and (max-width: 580px) {
+//   .home_box {
+//     overflow-y: scroll;
+//     scroll-behavior: smooth;
+//   }
+// }

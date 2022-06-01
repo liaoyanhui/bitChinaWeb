@@ -1,0 +1,177 @@
+.ipfs {
+  // min-width: 1024px;
+  // background-image: url("/static/images/bg.png");
+  // background-size: cover;
+  // min-width: 100vw;
+  // background-color: #000;
+  // width: 100%;
+  // height: calc(100vh + 2px);
+  // position: relative;
+  // overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+  height: calc(100vh + 2px);
+  position: relative;
+  overflow: hidden;
+  .bg {
+    position: relative;
+    min-width: 100vw;
+    height: 100%;
+  }
+  .earth {
+    opacity: 0.15;
+    height: 60%;
+    // max-height: 100rem;
+    position: absolute;
+    left: -3rem;
+    bottom: -10rem;
+  }
+  .container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 70%;
+    max-width: 153rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .ipfs_img {
+      width: 21rem;
+    }
+    .ipfs_title {
+      font-size: 1.8rem;
+    }
+    .slogan {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 3.6rem;
+      width: 100%;
+      margin-top: 3rem;
+      .line_left,
+      .line_right {
+        width: 5.2rem;
+      }
+      p {
+        padding: 0 1rem;
+      }
+    }
+    .phone_list {
+      display: none;
+    }
+    .list {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+      }
+      .list_content {
+        border: 1px solid #fff;
+        max-width: 47rem;
+        // width: 100%;
+        height: 20rem;
+        padding: 5rem 3.4rem 0 3.4rem;
+        font-size: 1.8rem;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+      .list_tip {
+        margin-top: 4.2rem;
+      }
+      .list_title {
+        font-size: 2.4rem;
+      }
+      .line {
+        height: 5px;
+        background-color: #fff;
+        border-radius: 3px;
+        margin-top: 1.8rem;
+      }
+    }
+  }
+}
+
+/* 手机 */
+@media screen and (max-width: 800px) {
+  .ipfs {
+    min-width: auto;
+    padding: 0 3rem;
+    .earth {
+      width: 50%;
+      left: -5rem;
+      bottom: 5rem;
+    }
+    .container {
+      width: 90%;
+      height: 75%;
+      top: 15%;
+      transform: translate(-50%, 0);
+      .ipfs_img {
+        width: 22rem;
+      }
+      .ipfs_title {
+        // font-size: 1.8rem;
+        margin: 1rem 0;
+      }
+      .slogan {
+        font-size: 2rem;
+        .line_left,
+        .line_right {
+          width: 2.5rem;
+        }
+      }
+      .list {
+        display: none;
+      }
+      .phone_list {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          border: 1px solid #fff;
+          background-color: rgba(255, 255, 255, 0.15);
+          padding: 2rem 2rem;
+          height: 18rem;
+          font-size: 1.8rem;
+          margin-bottom: 2.5rem;
+          .list_tip {
+            align-self: flex-start;
+          }
+          .line {
+            height: 2px;
+            background-color: #fff;
+            border-radius: 3px;
+            margin: 1rem 0;
+          }
+          .list_title {
+            font-size: 2.6rem;
+          }
+          .list_content {
+            // height: 20rem;
+            // font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

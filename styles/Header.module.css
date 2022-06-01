@@ -1,0 +1,223 @@
+.header {
+  width: 100%;
+  height: 10rem;
+  padding: 0 6rem;
+  background-color: transparent;
+  transition: height 0.5s, font-size 0.5s;
+  -webkit-transition: height 0.5s, font-size 0.5s; /* Safari */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  font-size: 2rem;
+}
+.header_active {
+  height: 6rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+  color: #000;
+  transition: height 0.5s, font-size 0.5s, background-color 0.5s;
+  -webkit-transition: height 0.5s, font-size 0.5s, background-color 0.5s; /* Safari */
+}
+
+.ownHeaderClass {
+  height: 60px;
+  background-color: #fff;
+  font-size: 2rem;
+  color: #000;
+  /* position: static; */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.04);
+}
+.ownHeaderClass a {
+  color: #000 !important;
+}
+
+.img_height {
+  min-height: 4rem !important;
+  transition: min-height 0.5s;
+  -webkit-transition: min-height 0.5s; /* Safari */
+}
+
+.img_height_active {
+  min-height: 2.8rem !important;
+  transition: min-height 0.5s;
+  -webkit-transition: min-height 0.5s; /* Safari */
+}
+
+.ul_router {
+  display: flex;
+}
+.header_active .ul_router a {
+  color: #000;
+}
+.header_active_small .ul_router a,
+.header_active_small .other_ul_router a {
+  color: #fff;
+}
+
+.ul_router li {
+  margin: 0 3rem 0 3rem;
+}
+
+.language {
+  width: 13.6rem;
+  text-align: right;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 500;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.language_scroll {
+  font-size: 2rem;
+  width: 13.6rem;
+  text-align: right;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: flex-end;
+}
+.show_more {
+  cursor: pointer;
+  display: none;
+  margin-left: 0.5rem;
+}
+
+.big_show {
+  cursor: pointer;
+  display: block;
+}
+.small_show {
+  cursor: pointer;
+  display: none;
+}
+
+.drop_down {
+  position: fixed;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+/* 小于1024像素 切换布局 */
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0 2rem;
+  }
+  .show_more {
+    display: block;
+    line-height: 14.5px;
+    margin-left: 1.8rem;
+  }
+  .ul_router {
+    display: none;
+  }
+  .header_active_small {
+    height: 60px;
+    background-color: #fff;
+    font-size: 1.4rem;
+    color: #000;
+  }
+  .language {
+    font-size: 2.5rem;
+  }
+  .big_show {
+    display: none;
+  }
+  .small_show {
+    display: block;
+  }
+  .ul_small_router li,
+  .other_ul_router li {
+    margin-top: 6.7rem;
+  }
+  /* .down .code {
+        margin-left: -10px;
+    } */
+
+  .code_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .agent {
+    display: flex;
+    margin-top: 2rem;
+  }
+  .down {
+    margin-right: 2rem;
+    /* align-self: center; */
+    /* margin-left: 1.5rem; */
+    /* text-align: center; */
+  }
+  .code {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+  .code > div {
+    vertical-align: bottom;
+    background-color: #fff;
+  }
+
+  .ul_small_router li a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .drop_down {
+    padding: 0 4.2rem;
+    position: fixed;
+    overflow: auto;
+  }
+  .small_header {
+    height: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right_en {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+  }
+  .other_ul_router,
+  .code_box {
+    font-size: 2.3rem;
+    margin-top: 12.8rem;
+  }
+
+  .email_ul_router {
+    margin-top: 14.5rem;
+    font-size: 2rem;
+  }
+  .email_ul_router li {
+    margin-bottom: 5rem;
+  }
+  .email_ul_router .title {
+    color: #4d4d4d;
+  }
+
+  .downLoad {
+    display: block;
+    color: #000;
+    border: 1px solid #000;
+    width: 140px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+    margin-top: 4rem;
+    border-radius: 5px;
+  }
+}

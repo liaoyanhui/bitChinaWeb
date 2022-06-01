@@ -1,0 +1,154 @@
+.footer_box {
+  width: 100%;
+  background-color: #3a3a3a;
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  background-color: #3a3a3a;
+  min-height: 40rem;
+  /* padding: 0 2rem; */
+  /* padding-left: 7vw; */
+  /* padding-right: 9vw; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer a {
+  color: #ccc;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.footerLogo {
+  height: 4.5rem;
+}
+.left {
+  margin-top: 5.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.code_box {
+  display: flex;
+}
+.agent {
+  display: flex;
+}
+.down {
+  margin-right: 4rem;
+  /* align-self: center; */
+  /* margin-left: 1.5rem; */
+  /* text-align: center; */
+}
+.code {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+.code > div {
+  vertical-align: bottom;
+  background-color: #fff;
+}
+.left li {
+  margin-bottom: 4.4rem;
+}
+
+.left li:not(:first-child) {
+  padding-left: 47px;
+}
+
+.left .title {
+  color: #999;
+  margin-top: 1rem;
+}
+.left p {
+  margin: 0;
+}
+.footerLogo {
+  margin-bottom: 3rem;
+}
+
+.right {
+  margin-top: 9.4rem;
+  color: #ccc;
+  display: flex;
+  font-size: 1.6rem;
+}
+.right li {
+  margin-right: 11rem;
+}
+.right li:last-child {
+  margin-right: 0;
+}
+.right .title {
+  color: #fff;
+  font-size: 2.2rem;
+}
+.right p {
+  margin-bottom: 1rem;
+}
+.bottom {
+  text-align: center;
+  color: #999;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.downLoad {
+  display: none;
+}
+
+/* 小于1024像素 切换布局 */
+@media screen and (max-width: 1024px) {
+  .agent {
+    margin-top: 2rem;
+  }
+  /* .footer_box {
+    padding-top: 100px;
+  } */
+  .top {
+    flex-direction: column;
+  }
+  .right {
+    flex-direction: column;
+    padding-left: 47px;
+  }
+  .right li {
+    margin-bottom: 10rem;
+  }
+  .left li:not(:first-child) {
+    padding-left: 47px;
+  }
+  .code_box {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .left {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  .down {
+    /* margin-left: 47px; */
+  }
+
+  .downLoad {
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 23.3rem;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+    margin-top: 4rem;
+    border-radius: 5px;
+  }
+}

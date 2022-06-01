@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  // height: 10rem;
+  padding: 2rem 6rem;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 1;
+  .ul_router {
+    display: flex;
+    li {
+      margin: 0 2rem;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .right_icon {
+    display: none;
+    // position: relative;
+    .drop_menu {
+      display: none;
+    }
+  }
+}
+
+/* 手机 */
+@media screen and (max-width: 580px) {
+  .header {
+    padding: 3rem 3rem;
+    .ul_router {
+      display: none;
+    }
+    .right_icon {
+      display: block;
+      .drop_menu {
+        display: block;
+        position: absolute;
+        width: 15rem;
+        padding: 1rem 0.5rem;
+        right: 0;
+        top: 10rem;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.6);
+        a {
+          color: #fff;
+        }
+        li {
+          height: 7.5rem;
+          line-height: 7.5rem;
+          // border-bottom: 1px solid #fff;
+          padding-left: 3rem;
+        }
+      }
+    }
+  }
+}

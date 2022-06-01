@@ -1,0 +1,45 @@
+.header {
+  height: 6rem;
+  background-color: #fff;
+  font-size: 2rem;
+  color: #000;
+  /* position: static; */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.04);
+}
+.header a {
+  color: #000 !important;
+}
+
+.clause_box {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 12.6rem 4rem 12.6rem;
+  font-size: 1.4rem;
+  color: #000;
+}
+.clause_box h1 {
+  color: #000;
+  font-size: 2.2rem;
+  margin: 12.9rem 0 4.1rem 0;
+  text-align: center;
+}
+.title {
+  margin-top: 3.6rem;
+}
+@media screen and (max-width: 550px) {
+  .clause_box {
+    font-size: 12px;
+  }
+  /* .header {
+        height: 7rem;
+    } */
+  .clause_box {
+    padding: 0 2rem;
+  }
+  .clause_box h1 {
+    color: #000;
+    font-size: 2.6rem;
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
+}
